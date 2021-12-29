@@ -10,7 +10,7 @@ export default function NavBar() {
 	useEffect(() => setMounted(true), []);
 
 	return (
-		<div className="navbar mb-2 shadow-lg bg-blue-700 text-neutral-content">
+		<div className="navbar mb-2 shadow-lg bg-purple-400 dark:bg-purple-800 text-neutral-content">
 			<div className="flex-1 px-2 mx-2">
 				<span className="text-gray-50 text-lg font-bold">
 					next-launch
