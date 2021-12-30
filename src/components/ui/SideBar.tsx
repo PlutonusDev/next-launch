@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import SideBarLink from "../partials/SideBarLink";
 import SideBarDropdown from "../partials/SideBarDropdown";
 
-import { AiFillHome } from "react-icons/ai";
+import { AiFillDatabase, AiFillHome } from "react-icons/ai";
 import { HiColorSwatch, HiBriefcase } from "react-icons/hi";
 import { MdFormatPaint, MdSpaceDashboard } from "react-icons/md";
 
@@ -40,6 +40,7 @@ export default function SideBar({ sideBarOpen, setSideBarOpen }) {
 					<SideBarDropdown icon={<MdFormatPaint />} label="Mockups">
 						<SideBarLink icon={<HiBriefcase />} label="Showcase" href="/mockups/reel" />
 						<SideBarLink icon={<MdSpaceDashboard />} label="Dashboard" href="/mockups/dashboard" />
+						<SideBarLink icon={<AiFillDatabase />} label="Database" href="/mockups/database" />
 					</SideBarDropdown>
 				</div>
 			</div>

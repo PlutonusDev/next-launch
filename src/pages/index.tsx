@@ -7,7 +7,7 @@ import { FiGithub, FiChevronsRight } from "react-icons/fi";
 export default function Index() {
 	return (
 		<Layout title="Hello from next-launch!">
-			<Section>
+			<Section className="items-center">
 				<h1 className="text-3xl font-bold leading-none sm:text-4xl font-['Quicksand'] mb-2">Say</h1>
 				<h1 className="text-6xl text-purple-500 font-['Caveat'] animate-pulse">Hello!</h1>
 				<h1 className="text-3xl font-bold leading-none sm:text-4xl font-['Quicksand'] mb-6">to next-launch</h1>
@@ -23,7 +23,7 @@ export default function Index() {
 				</div>
 
 				<h2 className="text-xl font-semibold text-center mb-4">Ready to get started?</h2>
-				<div className="mockup-code w-full overflow-x-scroll">
+				<div className="mockup-code w-full overflow-x-auto">
 					<pre data-prefix="$">
 						<code>git clone https://github.com/PlutonusDev/next-launch <span className="text-green-300">my-project</span></code>
 					</pre>
