@@ -8,8 +8,11 @@ const positions = ["Director", "Executive", "Developer", "Human Resources", "IT"
 export default async function handler(req, res) {
 	await prisma.$connect();
 
+	const existing = await prisma.user.count({});
+	if(existing > 0) return res.send({ msg: "Already generated!" });
+
 	const users = [];
-	for(let i = 0; i < 99; i++) {
+	for(let i = 0; i < 24; i++) {
 		users.push({
 			username: faker.name.findName(),
 			country: faker.address.country(),
